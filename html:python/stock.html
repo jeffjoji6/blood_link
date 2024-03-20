@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../images/blood.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/stockstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <title>Stock Availability</title>
+</head>
+<body>
+    <div class="top">
+        <a href="index.html"><img src="../images/logo.png" alt="logo" style="height: 100px; width: 50;"></a>
+        <a href="index.html" style="text-decoration: none;"><h1>Blood Link</h1></a>
+    </div>
+    <h1 class="text" style="font-size: 50px;">Stock Availability</h1>
+    
+    
+<div class="login-box">
+  
+    <form>
+      <div class="user-box">
+            <select name="slct1" id="slct1" onchange="populate(this.id, 'slct2')">
+                <option value="">State</option>
+                <option value="all">All</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Karnataka">Karnataka</option>
+            </select>
+      </div>
+      <div class="user-box">
+        <label for="">District</label>
+        <select name="slct2" id="slct2"></select>
+      </div>
+      <div class="user-box">
+        <select name="myBlood" id="BloodGroup">
+            <option value="-1">Blood Group</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select>
+    </div>
+
+    <div class="user-box">
+        <select name="myType" id="Type">
+            <option value="-1">Blood Component</option>
+            <option value="Whole Blood">Whole Blood</option>
+            <option value="Plasma">Plasma</option>
+            <option value="Platelets">Platelets</option>
+        </select>
+    </div>
+      
+        <a href="stockit.html" >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>    
+        Search</a>
+    
+      </a>
+    </form>
+  </div>
+
+    <script src="../javascript/stock.js"></script>
+
+</body>
+</html>

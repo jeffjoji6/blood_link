@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/nearest.css">
+    <link rel="icon" href="../images/blood.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <title>Nearest Blood Bank</title>
+</head>
+<body>
+    <div class="top">
+        <a href="index.html"><img src="../images/blood.png" alt="logo" style="height: 100px; width: 50;"></a>
+        <a href="index.html" style="text-decoration: none;"><h1>Blood Link</h1></a>
+    </div>
+    <h1 class="text" style="font-size: 50px;">Nearest Blood Bank</h1>
+    
+    <div class="container">
+        <div class="f-group">
+            <label for="State">State</label>
+            <select name="slct1" id="slct1" onchange="populate(this.id, 'slct2')">
+                <option value="">--Select State--</option>
+                <option value="all">All</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Karnataka">Karnataka</option>
+            </select>
+        </div>
+        <div class="f-group">
+            <label for="">District</label>
+            <select name="slct2" id="slct2"></select>
+        </div>
+    </div>
+    
+    <div class="box-but"><button class="but" name="submit">
+        <strong><a href="nearhosp.html" style="text-decoration: none; color: black;">Search</a></strong>
+    </button></div>
+    <br>
+    <div style="text-align: center;">
+    <a href="index.html" style="text-decoration: none;">Back to Homepage</a>
+    </div>
+    <script src="../javascript/nearest.js"></script>
+</body>
+</html>
